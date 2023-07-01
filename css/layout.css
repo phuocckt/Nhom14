@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+h1 {
+    background: linear-gradient(to right, #ff0000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}  
+h1 a{
+    font-size: 50px;
+}
+
+/* HEADER */
+
+#menu{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    color: #000000;
+    text-align: center;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    border-bottom: 10px solid #333;
+    background-color: #fff;
+}
+#menu>ul{
+    display: flex;
+    list-style-type: none;
+}
+#menu>ul li{
+    margin: 10px 20px 0 0;
+    padding-bottom: 20px;
+}
+#menu>ul li>a:hover{
+    background-color: #333;
+    color: #fff;
+}
+a{
+    text-decoration: none !important;
+    color: #000000;
+    font-size: 17px;
+    transition: all 0.5s;
+}
+a i{
+    width: 40px;
+    height: 30px;
+    padding-top: 3px;
+    border-radius: 3px;
+    transition: .5s;
+} 
+button{
+    border-radius: 50%;
+    cursor: pointer;
+    color: #000000;
+    padding-top: 9px;
+}
+button:hover{
+    background: rgb(58, 49, 49);
+    transition: .5s;
+    color: #fff;
+    font-weight: bold;
+}
+.active{
+    color: red;
+    text-decoration: underline;
+}
+li:hover{
+    transform: translateY(0);
+}
+.setting{
+    display: flex;
+    background: #fff;
+    align-items: center;
+    border-radius: 7px;
+}
+input[type="search"]{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+}
+input[type="search"]:focus {
+    outline: none;
+    border: none;
+}
+input[type="search"]:focus::placeholder {
+    color:#fff;
+    font-style: italic;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-top: 3px solid #333;
+    display: flex;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5s;
+}
+.dropdown-menu a:hover{
+    transform: scale(0.9);
+    background-color: #333;
+    color: #fff;
+}
+li:hover .dropdown-menu {
+    display: block;
+}
+
+/*FOOTER*/
+
+.footer {
+    padding-top: 10rem;
+}
+
+.footer .section-wrapper {
+    background-color: #000000;
+    border-radius: 12px;
+    padding-left: 20px; 
+    background-image: url(../img/nike/poster-giay-den.jpg);
+    background-size: contain;
+}
+
+.footer-header {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-item {
+    margin: 0px 0 20px;
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.footer-header .logo {
+   margin: 30px 50px 20px 0;
+}    
+
+.footer-header .description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+}
+
+.social-list {
+    display: flex;
+     margin: 20px 0;
+     text-align: center;
+     justify-content: center;
+}
+
+.social-list a ~ a {
+     margin-left: 10px;
+}
+
+.social-list a i {
+     padding: 6px 10px;
+     background-color: #fff;
+     color: #ff0000;
+     border-radius: 50%;
+}
+.social-list a i:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.footer-menu a{
+    font-size: 1rem;
+    font-weight: 600;
+    color:#fff;
+    padding-top: 10px;
+    display: inline-block;
+    margin: 10px 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.footer-menu a:hover  {
+    color: #ff0000;
+    transform: translateY(-5px);
+    transition: .2s ease-in-out;
+}
+.content{   
+    margin-right: 30px;
+}
+.content>p{
+    font-size: 1.2rem;
+    color:#ff0000;
+}

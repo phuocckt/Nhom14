@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết</title>
+    <link rel="shortcut icon" href="img/uchiha-eye_icon.png " type="image/x-icon">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productType.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <h1><a href="index.html">ShoesShop</a></h1>
+            <ul>
+                <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                <li>
+                    <a href="#" class="dropdown-link">GIÀY</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="productNike.html">NIKE</a></li>
+                            <li><a href="productAdidas.html">ADIDAS</a></li>
+                            <li><a href="productJordan.html">JORDAN</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+            <div class="setting">
+                <div class="input-search">
+                    <a href="productType.html"><i class="fa fa-search"></i></a>
+                    <input type="search" name="find" placeholder="Nhập từ cần tìm">
+                </div>
+                <a href="carts.html"><i class="fa fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="large-image">
+                        <img src="img/nike/ci0919-118-giày-nike-air-force-1-shadow-multicolor-chính-hãng-dến-king-shoes-15.jpeg"
+                            alt="Product Image" class="img-fluid" id="largeImage">
+                    </div>
+                    <div class="product-img">
+                        <img src="img/nike/ci0919-118-giày-nike-air-force-1-shadow-multicolor-chính-hãng-dến-king-shoes-15.jpeg" alt="product" onclick="showLargeImage(this)">
+                        <img src="img/nike/ci0919-118-giày-nike-air-force-1-shadow-multicolor-chính-hãng-dến-king-shoes-1.png" alt="product" onclick="showLargeImage(this)">
+                        <img src="img/nike/ci0919-118-giày-nike-air-force-1-shadow-multicolor-chính-hãng-dến-king-shoes-2.png" alt="product" onclick="showLargeImage(this)">
+                        <img src="img/nike/ci0919-118-giày-nike-air-force-1-shadow-multicolor-chính-hãng-dến-king-shoes-3.png" alt="product" onclick="showLargeImage(this)">
+                        <img src="img/nike/ci0919-118-giày-nike-air-force-1-shadow-multicolor-chính-hãng-dến-king-shoes-4.png" alt="product" onclick="showLargeImage(this)">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="product-title">Tên: AIR FORCE 1</h2>
+                    <p class="product-description">Mô tả: Nike Air Force 1 Ra mắt vào năm 1982 bởi nhà thiết kế Bruce Kilgore,
+                        ngay lập tức mẫu giày Nike Air Force 1 (AF1) đã trở thành một ‘hit’ mạnh trên khắp thế giới khi
+                        ‘sold out’ ngay trong ngày đầu trình làng.
+                        Thiết kế mẫu giày Nike Air Force 1 được xem là đôi giày mang tính cách mạng trong thế giới
+                        sneaker, khi mà các nhà thiết kế kết hợp với các nhà khoa học cho ra mẫu giày có công nghệ ‘Air’
+                        – một túi khí ở gót chân để đệm hỗ trợ.</p>
+                    <p class="product-price">Giá: 3,300,000đ</p>
+                    <form action="carts.html" method="get">
+                        <div class="form-group">
+                            <label for="selectSize">Kích thước:</label>
+                            <select class="form-control" id="selectSize" name="selectSize">
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputQuantity">Số lượng:</label>
+                            <input type="number" class="form-control" name="txtSoLuong" id="inputQuantity" min="1" value="1" required pattern="[1-9][0-9]*">
+                            <div class="invalid-feedback">
+                                Số lượng không hợp lệ.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                        <button type="submit" class="btn btn-success">Mua ngay</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Bình luận</h5>
+                            <form>
+                                <div class="form-group">
+                                    <label for="commentName">Tên</label>
+                                    <input type="text" name="txtName" class="form-control" id="commentName" placeholder="Nhập tên">
+                                </div>
+                                <div class="form-group">
+                                    <label for="commentContent">Nội dung</label>
+                                    <textarea class="form-control" name="txtAddress" id="commentContent" rows="3"
+                                        placeholder="Nhập nội dung bình luận"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card mb-3 item">
+                        <div class="card-body">
+                            <h5 class="card-title">Xem bình luận</h5>
+                            <ul class="comment-list">
+                                <li class="media">
+                                    <img src="img/phuoc.jpg" alt="Avatar" class="mr-3 comment-avatar">
+                                    <div class="media-body comment-content">
+                                        <div class="cmt">
+                                            <h6 class="comment-user">Phước</h6>
+                                            <em>3 giờ trước</em>
+                                        </div>
+                                        <p class="comment-text">giày đẹp</p>
+                                        <span class="stars">
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="img/phuoc.jpg" alt="Avatar" class="mr-3 comment-avatar">
+                                    <div class="media-body comment-content">
+                                        <div class="cmt">
+                                            <h6 class="comment-user">Trần Vũ</h6>
+                                            <em>1 ngày trước</em>
+                                        </div>
+                                        <p class="comment-text">cũng ok đó</p>
+                                        <span class="stars">
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="img/phuoc.jpg" alt="Avatar" class="mr-3 comment-avatar">
+                                    <div class="media-body comment-content">
+                                        <div class="cmt">
+                                            <h6 class="comment-user">Lê Nhật Kỳ</h6>
+                                            <em>7 ngày trước</em>
+                                        </div>
+                                        <p class="comment-text">sẽ ủng hộ tiếp</p>
+                                        <span class="stars">
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                            <i class="fa fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="trending-product" id="trending">
+            <div class="center-text">
+                <h2>Sản phẩm liên quan</h2>
+            </div>
+            <div class="products">
+                <div class="row">
+                    <a href="productType.html?product=1234"><img src="img/nike/SNEAKER-315122-111-AIR-FORCE-1-07-NIKE-KINGSHOES.VN-TPHCM-TANBINH-17-logo-1551924204-.jpg" alt=""></a>
+                    <div class="product-text">
+                        <h5>HOT</h5>
+                    </div>
+                    <div class="price">
+                        <h4>AIR FORCE 1</h4>
+                        <span class="stars">
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                        </span>
+                        <p>3,300,000 đ</p>
+                        <a class="buy-btn" href="carts.html" class="btn">Mua ngay</a>
+                        <a class="cart-btn" href="carts.html" class="btn">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <a href="productType.html?product=1234"><img src="img/nike/dd9294-006-giay-the-thao-chay-bo-nike-downshifter-12-chinh-hang-gia-tot-den-king-shoes-2.jpg" alt=""></a>
+                    <div class="product-text">
+                        <h5>HOT</h5>
+                    </div>
+                    <div class="price">
+                        <h4>NIKE DOWNSHIFTER 12</h4>
+                        <span class="stars">
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                        </span>
+                        <p>2,200,000 đ</p>
+                        <a class="buy-btn" href="carts.html" class="btn">Mua ngay</a>
+                        <a class="cart-btn" href="carts.html" class="btn">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <a href="productType.html?product=1234"><img src="img/nike/dh2987-001-giay-nike-court-vision-low-chinh-hang-gia-tot-den-king-shoes-12.jpeg" alt=""></a>
+                    <div class="product-text">
+                        <h5>HOT</h5>
+                    </div>
+                    <div class="price">
+                        <h4>NIKE COURT VISION LOW</h4>
+                        <span class="stars">
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                            <i class="fa fa-solid fa-star"></i>
+                        </span>
+                        <p>2,200,000 đ</p>
+                        <a class="buy-btn" href="carts.html" class="btn">Mua ngay</a>
+                        <a class="cart-btn" href="carts.html" class="btn">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="section-wrapper">
+            <div class="row ">
+                <div class="col-6 footer-header">
+                    <h1><a href="index.html">ShoesShop</a></h1>
+                    <div class="social-list">
+                        <a href="#" class="social-item">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 footer-item">
+                    <div class="row">
+                        <div class="col-4 align-items-center">
+                            <div class="content">
+                                <p><b>Giới thiệu</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#"> Về cửa hàng</a></li>
+                                    <li><a href="#"> Thông tin cửa hàng</a></li>
+                                    <li><a href="#"> Kế hoạch về giá cả</a></li>
+                                    <li><a href="contact.html"> Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/layout.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

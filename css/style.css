@@ -1,0 +1,200 @@
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.main a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+section{
+    padding: 5% 10%;
+}
+.main-btn{
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid  rgb(58, 49, 49);
+    padding: 12px 25px;
+    transition: all .42s ease;
+    border-radius: 5px;
+}
+.main-btn:hover{
+    color: black;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgba(0 0 0 / 10%);
+}
+.center-text h2{
+    color:black;
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 40px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+}
+.row{
+    position: relative;
+    transition: all .40s;
+    display: flex;
+    width: 100%;
+}
+.products>.row:hover{
+    color: red;
+}
+.row img{
+    width: 100%;
+    height: 80%;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: cadetblue;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    background:  white;
+}
+h4{
+    margin-bottom: 10px;
+}
+.price a{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #222327;
+    background: rgb(29, 26, 26);
+}
+.price a:hover{
+    transition: .5s;
+    background: rgb(58, 49, 49);
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+} 
+.sale{
+    text-decoration: line-through;
+}
+#contact {
+    padding: 100px;
+  }
+  
+  #contact h2 {
+    font-size: 24px;
+    color: #ff0000;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  
+  #contact-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #contact-form button[type="submit"] {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .continue {
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.strikethrough{
+    background: black;
+    width: 300px;
+    height: 3px;
+    margin: auto;
+}
+.buy-btn{
+    text-align: center;
+    display: none;
+}
+.buy-btn:hover{
+    box-shadow: 0 0 10px rgb(7, 66, 7);
+}
+.cart-btn{
+    text-align: center;
+    display: none;
+}
+.cart-btn:hover{
+    box-shadow: 0 0 10px black;
+}
+.row .buy-btn{
+    opacity: 0;
+    display: block;
+}
+.row:hover .buy-btn {
+    opacity: 1;
+    transition: .3s all ease-in;
+    background-color: green;
+    transform: translateY(-50%);
+}
+.row .cart-btn{
+    opacity: 0;
+    display: block;
+}
+.row:hover .cart-btn{
+    opacity: 1;
+    transition: .3s all ease-in;
+    background: none;
+    transform: translateY(-50%);
+}
+.invalid-feedback {
+    color: red;
+    margin-top: 5px;
+}

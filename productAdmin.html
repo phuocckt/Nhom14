@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoesShop</title>
+    <link rel="shortcut icon" href="img/uchiha-eye_icon.png " type="image/x-icon">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/productAdmin.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <h1><a href="productAdmin.html">ShoesShop</a></h1>
+            <ul>
+                <li><a href="#">ĐƠN HÀNG</a></li>
+                <li><a href="#">THỐNG KÊ</a></li>
+            </ul>
+            <div class="setting">
+                <div class="input-search">
+                    <a href="productType.html"><i class="fa fa-search"></i></a>
+                    <input type="search" name="find" placeholder="Nhập từ cần tìm">
+                </div>
+                <a href="index.html"><button type="submit" class="btn btn-primary btn-block">Đăng xuất</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+         
+          <div class="container">
+            <form id="sortingForm">
+              <label for="sort">Sắp xếp theo:</label>
+              <select id="sort" name="sort">
+                  <option value="name">Tên</option>
+                  <option value="price">Giá</option>
+                  <option value="category">Loại</option>
+                  <option value="status">Trạng thái</option>
+              </select>
+              
+              <label for="order">Thứ tự:</label>
+              <select id="order" name="order">
+                  <option value="asc">Tăng dần</option>
+                  <option value="desc">Giảm dần</option>
+              </select>
+              
+              <label for="num">Số lượng sản phẩm/trang:</label>
+              <select id="num" name="num">
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="50">50</option>
+                  <option value="60">60</option>
+              </select>
+              
+              <input type="submit" value="Chọn" class="btn btn-secondary">
+          </form> 
+            <a href="add.html" class="btn btn-success"><i class="fa fa-plus"
+                aria-hidden="true"></i>Thêm sản phẩm</a>
+            <div class="table-responsive text-center">
+              <table class="table table-light table-light mt-2">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>ID</th>
+                    <th>SKU</th>
+                    <th>NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>PRICE</th>
+                    <th>STOCK</th>
+                    <th>PRODUCTTYPE</th>
+                    <th>IMAGE</th>
+                    <th>STATUS</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>N1</td>
+                    <td>AIR FORCE 1</td>
+                    <td>Nike Air Force 1 Ra mắt vào năm 1982 bởi nhà thiết kế Bruce Kilgore, ngay lập tức mẫu giày Nike Air Force 1 (AF1) đã trở thành một ‘hit’ mạnh trên khắp thế giới khi ‘sold out’ ngay trong ngày đầu trình làng.
+                        Thiết kế mẫu giày Nike Air Force 1 được xem là đôi giày mang tính cách mạng trong thế giới sneaker, khi mà các nhà thiết kế kết hợp với các nhà khoa học cho ra mẫu giày có công nghệ ‘Air’ – một túi khí ở gót chân để đệm hỗ trợ.</td>
+                    <td>3,300,000 đ</td>
+                    <td>10</td>
+                    <td>Nike</td>
+                    <td><img src="img/nike/SNEAKER-315122-111-AIR-FORCE-1-07-NIKE-KINGSHOES.VN-TPHCM-TANBINH-17-logo-1551924204-.jpg" alt="image" width="200"></td>
+                    <td>Còn hàng</td>
+                    <td>
+                      <a href="suasanpham.html?id=1" class="btn btn-warning"><i
+                          class="fas fa-pencil-alt" aria-hidden="true"></i>Sửa sản phẩm</a>
+                      <br><br>
+                      <input type="submit" value="Xóa sản phẩm" class="btn btn-secondary">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>A1</td>
+                    <td>GIÀY NMD_R1 PRIMEBLUE</td>
+                    <td>GIÀY NMD_R1 PRIMEBLUE Ra mắt vào năm 1982 bởi nhà thiết kế Bruce Kilgore, ngay lập tức mẫu giày Nike Air Force 1 (AF1) đã trở thành một ‘hit’ mạnh trên khắp thế giới khi ‘sold out’ ngay trong ngày đầu trình làng.
+                        Thiết kế mẫu giày Nike Air Force 1 được xem là đôi giày mang tính cách mạng trong thế giới sneaker, khi mà các nhà thiết kế kết hợp với các nhà khoa học cho ra mẫu giày có công nghệ ‘Air’ – một túi khí ở gót chân để đệm hỗ trợ.</td>
+                    <td>3.900.000₫</td>
+                    <td>10</td>
+                    <td>Adidas</td>
+                    <td><img src="img/adidas/62d96641e799450fbbdfad0800cb06ed_9366.webp" alt="image" width="200"></td>
+                    <td>Còn hàng</td>
+                    <td>
+                        <a href="suasanpham.html?id=2" class="btn btn-warning"><i
+                            class="fas fa-pencil-alt" aria-hidden="true"></i>Sửa sản phẩm</a>
+                        <br><br>
+                        <input type="submit" value="Xóa sản phẩm" class="btn btn-secondary">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>J1</td>
+                    <td>Air Jordan 1 Mid SE</td>
+                    <td>Air Jordan 1 Mid SE Ra mắt vào năm 1982 bởi nhà thiết kế Bruce Kilgore, ngay lập tức mẫu giày Nike Air Force 1 (AF1) đã trở thành một ‘hit’ mạnh trên khắp thế giới khi ‘sold out’ ngay trong ngày đầu trình làng.
+                        Thiết kế mẫu giày Nike Air Force 1 được xem là đôi giày mang tính cách mạng trong thế giới sneaker, khi mà các nhà thiết kế kết hợp với các nhà khoa học cho ra mẫu giày có công nghệ ‘Air’ – một túi khí ở gót chân để đệm hỗ trợ.</td>
+                    <td>3,959,000₫</td>
+                    <td>10</td>
+                    <td>Jordan</td>
+                    <td><img src="img/jordan/air-jordan-1-mid-se-shoes-p48zQ5.jpg" alt="image" width="200"></td>
+                    <td>Còn hàng</td>
+                    <td>
+                        <a href="suasanpham.html?id=3" class="btn btn-warning"><i
+                            class="fas fa-pencil-alt" aria-hidden="true"></i>Sửa sản phẩm</a> 
+                        <br><br>
+                        <input type="submit" value="Xóa sản phẩm" class="btn btn-secondary"> 
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        
+    </main>
+    <script src="js/layout.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sua.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

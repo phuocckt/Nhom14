@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login &amp; Register Form</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<ul class="nav nav-tabs card-header-tabs">
+							<li class="nav-item">
+								<a class="nav-link active" href="#login" data-toggle="tab">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#register" data-toggle="tab">Register</a>
+							</li>
+						</ul>
+					</div>
+					<div class="card-body">
+						<div class="tab-content">
+							<div class="tab-pane active" id="login">
+								<form action="index.html" method="GET" id="login-form">
+									<div class="form-group">
+										<label for="username">Username</label>
+										<input type="text" class="form-control" id="username" name="username" pattern="[A-Za-z][A-Za-z0-9_]{5,31}" 
+											   title="Tên đăng nhập không hợp lệ. Vui lòng kiểm tra yêu cầu." required>
+									</div>									
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input type="password" class="form-control" id="password" name="password"
+											   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"
+											   title="Mật khẩu không hợp lệ. Vui lòng kiểm tra yêu cầu." required>
+									</div>									
+									<div class="from-group">
+										<input type="checkbox" name="remember" id="remember">
+										<label for="remember">Remember password</label>
+									</div>
+									<button type="submit" class="btn btn-block">Login</button>
+								</form>
+							</div>
+							<div class="tab-pane" id="register">
+								<form action="login.html" method="GET">
+									<div class="form-group">
+										<label for="fullname">Full Name</label>
+										<input type="text" class="form-control" id="fullname" name="fullname" required>
+									</div>
+									<div class="form-group">
+										<label for="email">Email Address</label>
+										<input type="email" class="form-control" id="email" name="email" required>
+									</div>
+									<div class="form-group">
+										<label for="username2">Username</label>
+										<input type="text" class="form-control" id="username2" name="username2"
+											required>
+									</div>
+									<div class="form-group">
+										<label for="password2">Password</label>
+										<input type="password" class="form-control" id="password2" name="password2"
+											required>
+									</div>
+									<button type="submit" class="btn btn-block">Register</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

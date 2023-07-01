@@ -1,0 +1,45 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#menu ul li {
+        margin-right: 5px;
+    }
+
+    #menu .dropdown-menu {
+        padding: 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	#menu ul li {
+        margin-right: 8px;
+    }
+
+    #menu .dropdown-menu {
+        padding: 8px;
+    }
+}
+@media (max-width: 767px) {
+	#menu ul li {
+        margin-right: 10px;
+    }
+
+    #menu .dropdown-menu {
+        padding: 10px;
+    }
+	.setting{
+		display: none;
+	}
+	.dropdown-menu ul{
+		display: block;
+	}
+}
+@media only screen and (min-width: 280px) and (max-width: 575px) {
+	.soi-hv{
+		font-size: 16px;
+	}
+	#menu ul li {
+        margin-right: 3px;
+    }
+
+    #menu .dropdown-menu {
+        padding: 3px;
+    }
+}

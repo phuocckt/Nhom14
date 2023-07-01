@@ -1,0 +1,12 @@
+.container:has(:not(#txtProducts:checked)) #buyButton{
+    display: none;
+}
+.container:has(#txtProducts:checked) #buyButton{
+    display: block;
+}  
+.container{
+    padding: 100px;
+}
+.input-quantity:invalid {
+    border-color: red;
+}
